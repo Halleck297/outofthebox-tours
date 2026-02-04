@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* Out of the Box Tours - Cool Pop Design System */
+
+@theme {
+  /* Core Pop Colors */
+  --color-pop-yellow: hsl(48 100% 50%);
+  --color-pop-pink: hsl(340 85% 65%);
+  --color-pop-coral: hsl(16 100% 70%);
+  --color-pop-turquoise: hsl(168 76% 42%);
+  --color-pop-teal: hsl(180 60% 35%);
+  --color-pop-purple: hsl(270 70% 55%);
+  --color-pop-orange: hsl(25 95% 55%);
+
+  /* Semantic Tokens */
+  --color-background: hsl(45 100% 96%);
+  --color-foreground: hsl(240 10% 15%);
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(240 10% 15%);
+  --color-muted: hsl(45 30% 90%);
+  --color-muted-foreground: hsl(240 5% 45%);
+  --color-border: hsl(45 30% 85%);
+
+  /* Fonts */
+  --font-display: "Bebas Neue", sans-serif;
+  --font-body: "Poppins", sans-serif;
+
+  /* Border Radius */
+  --radius-4xl: 2rem;
+  --radius-5xl: 2.5rem;
+
+  /* Animations */
+  --animate-bounce-slow: bounce 2s ease-in-out infinite;
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+}
+
+/* Base Styles */
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+/* Pop Button Styles */
+.btn-pop-yellow {
+  background-color: var(--color-pop-yellow);
+  color: var(--color-foreground);
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  box-shadow: 6px 6px 0px var(--color-pop-pink);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.3s;
+}
+
+.btn-pop-yellow:hover {
+  box-shadow: 10px 10px 0px var(--color-pop-pink);
+  transform: translateY(-4px);
+}
+
+.btn-pop-pink {
+  background-color: var(--color-pop-pink);
+  color: white;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  box-shadow: 6px 6px 0px var(--color-pop-pink);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.3s;
+}
+
+.btn-pop-pink:hover {
+  box-shadow: 10px 10px 0px var(--color-pop-pink);
+  transform: translateY(-4px);
+}
+
+.btn-pop-turquoise {
+  background-color: var(--color-pop-turquoise);
+  color: white;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  box-shadow: 6px 6px 0px var(--color-pop-pink);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.3s;
+}
+
+.btn-pop-turquoise:hover {
+  box-shadow: 10px 10px 0px var(--color-pop-pink);
+  transform: translateY(-4px);
+}
+
+/* Pop Card Styles */
+.card-pop {
+  background-color: var(--color-card);
+  border-radius: 1.5rem;
+  box-shadow: 6px 6px 0px var(--color-pop-pink);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.card-pop:hover {
+  box-shadow: 10px 10px 0px var(--color-pop-pink);
+  transform: translateY(-8px);
+}
+
+/* Organic Blob Shapes */
+.blob {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+.blob-animate {
+  animation: blob-morph 8s ease-in-out infinite;
+}
+
+/* Pop Shadows */
+.shadow-pop {
+  box-shadow: 6px 6px 0px var(--color-pop-pink);
+}
+
+.shadow-pop-lg {
+  box-shadow: 10px 10px 0px var(--color-pop-pink);
+}
+
+.shadow-pop-yellow {
+  box-shadow: 6px 6px 0px var(--color-pop-yellow);
+}
+
+.shadow-pop-turquoise {
+  box-shadow: 6px 6px 0px var(--color-pop-turquoise);
+}
+
+/* Text Stroke for Bold Headlines */
+.text-stroke {
+  -webkit-text-stroke: 2px currentColor;
+  text-stroke: 2px currentColor;
+}
+
+.text-stroke-dark {
+  -webkit-text-stroke: 3px var(--color-foreground);
+  text-stroke: 3px var(--color-foreground);
+  paint-order: stroke fill;
+}
+
+/* Animations */
+@keyframes blob-morph {
+  0%, 100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  25% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  50% {
+    border-radius: 50% 60% 30% 60% / 30% 60% 70% 40%;
+  }
+  75% {
+    border-radius: 60% 40% 60% 30% / 70% 30% 50% 60%;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+.animate-bounce-slow {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+/* Staggered Animation Delays */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+
+/* Utility: line-clamp */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

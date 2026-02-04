@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import HeroSection from '../components/HeroSection';
+import LocalGuidesSection from '../components/LocalGuidesSection';
+import ToursSection from '../components/ToursSection';
+import TailorMadeSection from '../components/TailorMadeSection';
+import WhyChooseUsSection from '../components/WhyChooseUsSection';
+import BlogSection from '../components/BlogSection';
+import Footer from '../components/Footer';
+---
+
+<Layout>
+  <!-- Navbar needs client:load because it has mobile menu state -->
+  <Navbar client:load />
+
+  <!-- Hero section - static, no JS needed -->
+  <HeroSection />
+
+  <!-- Local Guides - static content -->
+  <LocalGuidesSection />
+
+  <!-- Tours section needs client:visible for show more/less functionality -->
+  <ToursSection client:visible />
+
+  <!-- Tailor Made - has form, but can work without JS initially -->
+  <TailorMadeSection />
+
+  <!-- Why Choose Us - static content -->
+  <WhyChooseUsSection />
+
+  <!-- Blog - static content -->
+  <BlogSection />
+
+  <!-- Footer - static content -->
+  <Footer />
+</Layout>
