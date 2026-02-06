@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monoton&family=Poppins:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 /* Out of the Box Tours - Cool Pop Design System */
@@ -24,6 +24,7 @@
 
   /* Fonts */
   --font-display: "Bebas Neue", sans-serif;
+  --font-accent: "Monoton", cursive;
   --font-body: "Poppins", sans-serif;
 
   /* Border Radius */

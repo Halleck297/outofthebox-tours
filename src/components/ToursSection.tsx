@@ -2,7 +2,7 @@ import { useState } from "react";
 import tour1 from "../assets/tour-1.jpg";
 import tour2 from "../assets/tour-2.jpg";
 import tour3 from "../assets/tour-3.jpg";
-import { Clock, Users, Star, MapPin, ChevronDown, ChevronUp } from "lucide-react";
+import { Clock, Users, Star, MapPin, ChevronDown, ChevronUp } from "./Icons";
 
 interface Tour {
   title: string;

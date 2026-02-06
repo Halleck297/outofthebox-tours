@@ -19,7 +19,7 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl mx-auto text-center">
           <div className="animate-slide-up">
             <span className="inline-block bg-pop-pink text-white font-bold px-4 py-2 rounded-full text-sm uppercase tracking-wider mb-6">
               Authentic Italian Experiences
@@ -32,21 +32,21 @@ const HeroSection = () => {
             THE BOX
           </h1>
 
-          <p className="text-lg md:text-xl text-foreground/90 mb-8 max-w-xl animate-slide-up delay-200 font-medium">
+          <p className="text-lg md:text-xl text-foreground/90 mb-8 max-w-xl mx-auto animate-slide-up delay-200 font-medium">
             Discover Italy through the eyes of passionate locals.
             Unforgettable tours, authentic connections, unique adventures.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 animate-slide-up delay-300">
+          <div className="flex flex-col sm:flex-row gap-4 animate-slide-up delay-300 justify-center">
             <a
               href="#tours"
-              className="bg-pop-yellow text-foreground font-bold px-8 py-4 rounded-full shadow-pop hover:shadow-pop-lg hover:-translate-y-1 transition-all duration-300 uppercase tracking-wide text-center"
+              className="font-accent bg-pop-yellow text-foreground font-bold px-8 py-4 rounded-full shadow-pop hover:shadow-pop-lg hover:-translate-y-1 transition-all duration-300 uppercase tracking-wide text-center text-lg"
             >
               Explore Tours
             </a>
             <a
               href="#tailor-made"
-              className="bg-pop-turquoise text-white font-bold px-8 py-4 rounded-full shadow-pop-yellow hover:shadow-pop-lg hover:-translate-y-1 transition-all duration-300 uppercase tracking-wide text-center"
+              className="font-accent bg-pop-turquoise text-white font-bold px-8 py-4 rounded-full shadow-pop-yellow hover:shadow-pop-lg hover:-translate-y-1 transition-all duration-300 uppercase tracking-wide text-center text-lg"
             >
               Customize Yours
             </a>

@@ -1,4 +1,4 @@
-import { Sparkles, Heart, Map, MessageCircle } from "lucide-react";
+import { Sparkles, Heart, Map, MessageCircle } from "./Icons";
 
 const features = [
   {

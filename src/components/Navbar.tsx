@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X } from "./Icons";
 
 const navLinks = [
   { name: "Us", href: "#us" },
@@ -21,7 +21,7 @@ const Navbar = () => {
             <img
               src="/color-logo-nobg.svg"
               alt="Out of the Box Tours"
-              className="h-14 w-auto"
+              className="h-22 w-auto"
             />
           </a>
 

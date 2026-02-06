@@ -1,4 +1,4 @@
-import { Heart, Users, MapPin, Sparkles, Globe } from "lucide-react";
+import { Heart, Users, MapPin, Sparkles, Globe } from "./Icons";
 
 const highlights = [
   {

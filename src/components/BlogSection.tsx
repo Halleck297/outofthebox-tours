@@ -1,4 +1,4 @@
-import { ArrowRight, Calendar } from "lucide-react";
+import { ArrowRight, Calendar } from "./Icons";
 
 interface BlogPost {
   title: string;
