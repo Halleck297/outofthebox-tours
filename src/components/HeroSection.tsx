@@ -26,7 +26,7 @@ const HeroSection = () => {
             </span>
           </div>
 
-          <h1 className="font-display text-6xl md:text-8xl lg:text-9xl text-foreground mb-6 animate-slide-up delay-100 leading-none">
+          <h1 className="font-accent text-6xl md:text-8xl lg:text-9xl text-foreground mb-6 animate-slide-up delay-100 leading-none">
             TRAVEL
             <span className="block text-pop-yellow text-stroke-dark">OUTSIDE</span>
             THE BOX

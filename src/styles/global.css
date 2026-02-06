@@ -53,6 +53,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
 }
 
+.font-accent {
+  font-family: var(--font-accent) !important;
+}
+
 /* Container */
 .container {
   width: 100%;
